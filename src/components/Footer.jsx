@@ -13,10 +13,7 @@ const prodctList = [
 	{
 		name: "Roadmap",
 		icons: <CiShare1 />,
-	},
-	{
-		name: "Pricing",
-	},
+	}
 ];
 const Community = [
 	{
@@ -34,10 +31,7 @@ const Community = [
 	{
 		name: "LinkedIn",
 		icons: <CiShare1 />,
-	},
-	{
-		name: "OSS Friends",
-	},
+	}
 ];
 const Company = [
 	{
@@ -57,10 +51,6 @@ const Company = [
 function Footer() {
 	return (
 		<div className={styles.footer}>
-			<div className={`${styles.footerItem} open-sans`}>
-				<div>Made with ❤️ by</div>
-				<div style={{ textDecoration: "underline" }}>@cuvette</div>
-			</div>
 
 			<div className={`${styles.footerItem} open-sans`}>
 				<ul>

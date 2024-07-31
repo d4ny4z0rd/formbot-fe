@@ -1,0 +1,12 @@
+.heroCompanyText {
+	font-size: 1.25rem;
+	font-weight: bold;
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	text-align: center;
+	color: #ffffff;
+	background-image: linear-gradient(to right, #171923, #1a202c);
+}
+.container {
+	margin-bottom: 50px;
+}

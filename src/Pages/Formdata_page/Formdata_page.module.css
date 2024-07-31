@@ -1,0 +1,233 @@
+.inputBox,
+.inputBox2,
+.inputBox1 {
+	width: 250px;
+	height: 35px;
+	padding: 5px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	margin-bottom: 5px;
+	margin-left: 450px;
+	margin-top: 40px;
+}
+
+.sendButton {
+	height: 42px;
+	padding: 5px 10px;
+	font-size: 16px;
+	margin-left: 5px;
+	cursor: pointer;
+	border: none;
+	border-radius: 3px;
+	background-color: #1a5fff;
+	color: white;
+}
+
+.mediaContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.mediaContainer img,
+.mediaContainer video {
+	max-height: 300px;
+	max-width: 100%;
+	object-fit: cover;
+}
+
+.bubbleImage {
+	width: 40px;
+	height: 40px;
+	margin-right: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.avatarImage {
+	border-radius: 50%;
+}
+
+.fieldContainer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.chatContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100vh;
+	overflow: scroll;
+}
+@media (max-width: 600px) {
+	.fieldContainer {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-bottom: 10px;
+		margin-left: -40%;
+	}
+	.inputBox1,
+	.inputBox2 {
+		margin-left: 6%;
+	}
+	.inputBox {
+		margin-right: -6%;
+		width: 180px;
+		height: 30px;
+	}
+	.ratingsend,
+	.ratingbbsend {
+		flex-direction: column; /* Stack items on mobile */
+		align-items: center;
+		margin-left: 0; /* Remove fixed margin */
+	}
+	.ratingContainer {
+		flex-direction: row; /* Ensure row layout for ratings */
+		justify-content: space-around; /* Space ratings evenly */
+	}
+	.actionButton {
+		width: 90%; /* Full width on mobile */
+		margin: 5px auto; /* Center and space buttons */
+	}
+
+	.sendButton {
+		margin-left: 43px;
+		width: 7%;
+	}
+}
+
+.chatBubble {
+	background-color: #f1f1f1;
+	border-radius: 20px;
+	padding: 10px;
+	margin: 5px 0;
+	max-width: 70%;
+	word-wrap: break-word;
+}
+
+.chatBubble input {
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+.chatBubble button {
+	margin-left: 5px;
+}
+
+.disabledInput {
+	background-color: #777777; /* Gray background */
+	pointer-events: none; /* Disable interactions */
+	color: #ffffff; /* Ensure text is visible */
+}
+
+.disabledButton {
+	background-color: #777777; /* Gray background */
+	pointer-events: none; /* Disable interactions */
+	color: #ffffff; /* Ensure text is visible */
+}
+
+.disabledRating {
+	background-color: #777777; /* Gray background */
+	pointer-events: none; /* Disable interactions */
+}
+
+.ratingBox {
+	display: flex;
+	justify-content: space-around;
+	margin: 10px 0;
+	padding: 2px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background-color: #fff;
+}
+
+.ratingButton {
+	background-color: blue;
+	color: white;
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin: 0 5px;
+}
+
+.selectedRating {
+	background-color: #ff8e21;
+	color: black;
+}
+
+.datePickerContainer {
+	display: flex;
+	align-items: center;
+}
+
+.ratingbbsend {
+	display: flex;
+	align-items: center;
+	margin-left: 400px;
+}
+
+.ratingContainer {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 10px;
+}
+
+.ratingBox {
+	background-color: blue;
+	border: none;
+	color: white;
+	cursor: pointer;
+	padding: 1px;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+}
+
+.selectedRating {
+	background-color: #ff8e21;
+}
+
+.ratingsend {
+	display: flex;
+	align-items: center;
+	margin-left: 450px;
+}
+
+.ratingsend div {
+	border-radius: 5px;
+	padding: 2px;
+	background-color: white;
+}
+
+.actionButton {
+	background-color: blue;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.actionButton.clicked {
+	background-color: #ff8e21;
+	color: white;
+}
+
+.datepicker {
+	display: flex;
+	align-items: center;
+}

@@ -1,0 +1,32 @@
+.footer {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+	padding: 20px;
+	justify-items: center;
+	background-image: linear-gradient(to right, #171923, #1a202c);
+	color: #ffffff;
+}
+
+.footerItem {
+	padding: 10px;
+	text-align: left;
+}
+
+.footerItem h4 {
+	margin-bottom: 10px;
+}
+
+.footerItem ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.footerItem ul li {
+	margin-bottom: 5px;
+}
+.prodctList {
+	display: flex;
+	gap: 5px;
+}

@@ -1,0 +1,251 @@
+/* .container {
+  background-color: #1F1F23;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+} */
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 20px;
+	background-color: #1c1c1e;
+	min-height: 100vh;
+	color: #ffffff;
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: #18181b;
+	padding: 10px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+.input {
+	padding: 5px;
+	border: 1px solid #444;
+	background-color: #37373e;
+	color: #fff;
+	width: 200px;
+}
+
+.centerButtons {
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+}
+
+.tabButton {
+	margin: 0 5px;
+	padding: 5px 10px;
+	background-color: #1c1c1c;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+}
+
+.tabButton:hover {
+	background-color: #444;
+}
+
+.rightButtons {
+	display: flex;
+	align-items: center;
+}
+
+.actionButton,
+.saveButton,
+.closeButton {
+	margin-left: 5px;
+	padding: 5px 10px;
+	background-color: #444;
+	color: #fff;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+.actionButton:hover,
+.saveButton:hover,
+.closeButton:hover {
+	background-color: #848890;
+}
+
+.saveButton {
+	background-color: #4ade80;
+}
+
+.closeButton {
+	color: #f55050;
+}
+
+.mainContent {
+	display: flex;
+	margin-top: 70px;
+}
+
+.sidebar {
+	width: 250px;
+	background-color: #18181b;
+	padding: 20px;
+	color: #ffffff;
+	position: fixed;
+	top: 70px;
+	left: 0;
+	height: calc(100vh - 70px);
+	overflow-y: auto;
+}
+
+.section {
+	margin-bottom: 30px;
+}
+
+.section h3 {
+	margin-bottom: 15px;
+}
+
+.buttonGroup {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 10px;
+}
+
+.bubbleButton,
+.inputButton {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5px;
+	padding: 10px 20px;
+	background-color: #1f1f23;
+	color: #fff;
+	border: 1px solid #27272a;
+	cursor: pointer;
+	text-align: left;
+	border-radius: 10px;
+}
+
+/* .fieldsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 270px;
+  width: calc(100% - 270px);
+  padding: 20px;
+} */
+.fieldsContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+}
+
+.formField {
+	margin-bottom: 10px;
+	width: 100%;
+	max-width: 275px;
+	padding: 18px 20px;
+	background-color: #18181b;
+	border-radius: 10px;
+	position: relative;
+	border: 1px solid transparent; /* Change from #444 to transparent */
+}
+
+.fieldHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.fieldHeader label {
+	margin-bottom: 5px;
+	color: #ffffff;
+}
+
+.deleteIcon {
+	position: absolute;
+	top: -10px; /* Adjust to position the icon at the top */
+	right: -10px; /* Adjust to position the icon at the top */
+	cursor: pointer;
+	background-color: #18181b;
+	border-radius: 50%;
+	padding: 5px;
+	color: red; /* Ensure the delete icon is red */
+}
+
+.formField input {
+	width: 90%;
+	padding: 8px;
+	border: 1px solid #444;
+	background-color: #37373e;
+	color: #fff;
+	border-radius: 5px;
+}
+
+.inputContainer input.errorInput {
+	border-color: red;
+}
+
+.errorMessage {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+}
+.startBox {
+	width: 200px;
+	height: 50px;
+	background-color: #18181b;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	margin: 40px 0 20px 0; /* Adjusted margin to bring it a little down */
+	font-size: 1.2rem;
+	gap: 10px;
+}
+/* Field.module.css */
+
+/* FormPage.module.css */
+
+.formField {
+	margin-bottom: 10px;
+	padding: 10px;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+}
+
+.fieldHeader {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.deleteIcon {
+	cursor: pointer;
+}
+
+.inputContainer {
+	margin-top: 5px;
+}
+
+.errorInput {
+	border: 1px solid red;
+}
+
+.errorMessage {
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+.errorInputContainer {
+	border-color: red;
+}

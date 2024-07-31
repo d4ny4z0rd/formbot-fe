@@ -1,0 +1,45 @@
+.preview {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	transition: background-color 0.3s;
+	height: 100vh;
+	padding: 20px; /* Adjust padding as needed */
+}
+
+.chatRow {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	margin-top: 40px; /* Adjust margin from top as needed */
+}
+
+.bubbleLeft,
+.bubbleRight {
+	margin: 10px;
+	padding: 10px 20px;
+	border-radius: 15px;
+	max-width: 60%; /* Adjust max width as needed */
+}
+
+.bubbleLeft {
+	background-color: #f1f1f1;
+	color: #000;
+	align-self: flex-start; /* Align to the left */
+}
+
+.bubbleRight {
+	background-color: #1a5fff;
+	color: #fff;
+	align-self: flex-end; /* Align to the right */
+	margin-left: auto; /* Push to the right */
+}
+
+.avatar {
+	width: 40px; /* Adjust size as needed */
+	height: 40px; /* Adjust size as needed */
+	border-radius: 50%;
+	margin-right: 10px; /* Adjust space between avatar and text */
+}
